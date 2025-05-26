@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sihle Zandile Tshabalala | Portfolio</title>
+  <style>
+    :root {
+      --primary: #D52D00;
+      --secondary: #FF9A56;
+      --bg: #fff;
+      --highlight: #D362A4;
+      --footer: #A30262;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(90deg, #D52D00, #FF9A56, #FDBAC4, #D362A4, #A30262);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--secondary);
+      padding: 0.6rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      border-left: 5px solid var(--primary);
+      padding-left: 1rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      margin-bottom: 2rem;
+      border-left: 6px solid var(--highlight);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .project-content {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--highlight);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      background: var(--footer);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .skills ul { columns: 1; }
+      .project { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sihle Zandile Tshabalala</h1>
+    <p>Final-Year IT Student | Developer</p>
+    <p>Johannesburg | <a href="mailto:sihletshabalala160@gmail.com" style="color:white;">sihletshabalala160@gmail.com</a> | 065 939 1287</p>
+    <p>
+      <a href="https://linkedin.com/in/sihle-tshabalala" target="_blank" style="color:white;">LinkedIn</a> |
+      <a href="https://github.com/SihleZT" target="_blank" style="color:white;">GitHub</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Sihle Zandile Tshabalala — a final-year Information Technology student at Richfield Graduate Institute of Technology with a passion for turning tech challenges into elegant solutions. My academic journey has sharpened my skills in software development, mobile commerce, and data analysis, while my projects—from building a full-stack social media platform to developing a graph-based student club system in C++—prove that I’m not just learning tech, I’m living it.</p>
+    <p>I thrive where logic meets creativity. I believe in building systems that don’t just work—but work smarter. Whether it’s writing clean, secure code, collaborating with teams, or designing tools that improve lives, I show up with curiosity, discipline, and a commitment to continuous improvement. I live the value, "I get better and better."</p>
+    <p>I’m currently looking for opportunities—especially graduate programs, learnerships, internships, and junior IT roles—where I can apply my skills, grow professionally, and contribute to tech-driven innovation.</p>
+  </section>
+
+  <section id="skills" class="skills">
+  <h2>Technical Skills</h2>
+  <ul style="columns: 2; list-style: none; padding-left: 0;">
+    <li><strong>Programming Languages:</strong> Python, Java, C++, PHP, JavaScript</li>
+    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, PHP</li>
+    <li><strong>Database Management:</strong> MySQL, SQL, XAMPP</li>
+    <li><strong>Development Tools & IDEs:</strong> Jupyter, Visual Studio, Code::Blocks, NetBeans, VS Code, draw.io</li>
+    <li><strong>Concepts:</strong> Object-Oriented Programming (OOP), Agile Methodology, Secure Coding, Cybersecurity</li>
+    <li><strong>Office & Business Tools:</strong> Microsoft Office Suite, Reporting, Data Entry</li>
+  </ul>
+</section>
+
+
+  <section id="projects">
+    <h2>Project Portfolio</h2>
+
+    <div class="project">
+      <img src="C:\Users\SIHLE\OneDrive\Desktop\Portfolio\images\S.png" alt="ClubHub System">
+      <div class="project-content">
+        <h3>ClubHub Membership System – C++ (2024)</h3>
+        <p>Graph-based app to manage and optimize student clubs. Features secure login, encrypted data, and 40% faster processing.</p>
+        <a class="btn" href="https://github.com/SihleZT/Class-Registration-System-with-Room-and-Schedule-Optimization--C---" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="C:\Users\SIHLE\OneDrive\Desktop\Portfolio\images\	P5.png" alt="Social Media Project">
+      <div class="project-content">
+        <h3>Social Media Network – Full Stack (2024)</h3>
+        <p>PHP/SQL platform with real-time chat, authentication, and profile management. Boosted load time by 30% with backend optimizations.</p>
+        <a class="btn" href="https://github.com/SihleZT/PRISM" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="C:\Users\SIHLE\OneDrive\Desktop\Portfolio\images\Train.png" alt="Train Scheduler">
+      <div class="project-content">
+        <h3>Train Scheduling System – Java (2025)</h3>
+        <p>Multithreaded scheduler simulating PRASA train activity with concurrency control and platform logic using ReentrantLocks.</p>
+        <a class="btn" href="https://github.com/SihleZT/-Train-scheduling-System-for-PRASA-Railway-Network-" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="C:\Users\SIHLE\OneDrive\Desktop\Portfolio\images\Bicyle.png" alt="Bike Rental System">
+      <div class="project-content">
+        <h3>E-Hailing Bicycle System – Java Console (2025)</h3>
+        <p>Menu-driven app for bicycle rental management. Features age restriction logic, flow control, and user input validation.</p>
+        <a class="btn" href="https://github.com/SihleZT/E-Hailing-Bicycle-Management-System" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+	<div class="project">
+		<img src="C:\Users\SIHLE\OneDrive\Desktop\MyFiles(IT)\3rd Year\Python\City\Citi.png" alt="City Database">
+		<div class="project-content">
+		<h3>cities-database-program - Python program queries using SQLite (2023)</h3>
+		<p>A Python command-line program that uses SQLite to store and query data about cities and their populations.</p>
+		<a class="btn" href="https://github.com/SihleZT/cities-database-program" target="_blank">View on Github</a>
+	</div>
+	</div>
+	<div class="project">
+		<img src="C:\Users\SIHLE\OneDrive\Desktop\MyFiles(IT)\3rd Year\Python\PricePerPackage\Price.png" alt="Bulk purchase-discount">
+		<div class="project-content">
+		<h3>bulk-purchase-discount - Python (2023)</h3>
+		<p>A Python program that calculates discounts based on the number of packages purchased.</p>
+		<a class="btn" href="https://github.com/SihleZT/bulk-purchase-discount" target="_blank">View on Github</a>
+	</div>
+	</div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sihletshabalala160@gmail.com">sihletshabalala160@gmail.com</a></p>
+    <p>Phone: 065 939 1287</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/sihle-tshabalala" target="_blank">linkedin.com/in/sihle-tshabalala</a></p>
+    <p>GitHub: <a href="https://github.com/SihleZT" target="_blank">github.com/SihleZT</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sihle Zandile Tshabalala — Proudly Built with Love & Identity.</p>
+  </footer>
+
+</body>
+</html>
